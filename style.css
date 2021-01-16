@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000;
+}
+.container
+{
+	position: relative;
+	width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .box
+{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.container:hover .box
+{
+	opacity: 0.1;
+	transform: scale(0.9);
+	filter: blur(5px);
+}
+.container .box:hover
+{
+	opacity: 1;
+	transform: scale(1);
+	filter: blur(0);
+}
+.container .box:before
+{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	filter: url(#wavy);
+}
+.container .box:nth-child(1):before
+{
+	background: #ffa90c;
+}
+.container .box:nth-child(2):before
+{
+	background: #fff;
+}
+.container .box:nth-child(3):before
+{
+	background: #0f0;
+}
+.container .box .content
+{
+	position: absolute;
+	padding: 20px;
+	text-align: center;
+	color: #111;
+	transition: 0.5s;
+}
+.container .box .content h2
+{
+	font-size: 2em;
+	margin-bottom: -10px;
+}
+svg
+{
+	width: 0;
+	height: 0;
+}
