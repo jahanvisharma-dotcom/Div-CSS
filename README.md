@@ -1,3 +1,3 @@
 # Div-CSS
-This is a simple 
+This is a simple DIV 
 
